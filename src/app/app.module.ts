@@ -9,6 +9,7 @@ import { SideDrawerComponent } from "./components/side-drawer/side-drawer.compon
 import { PostComponent } from "./components/post/post.component";
 import { PostDetailsComponent } from "./pages/post-details/post-details.component";
 import { HttpClientModule } from "@angular/common/http";
+import { ErrorComponent } from './pages/error/error.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from "@angular/common/http";
     NavbarComponent,
     SideDrawerComponent,
     PostComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    ErrorComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
