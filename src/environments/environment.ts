@@ -2,8 +2,6 @@ export const environment = {
   production: false
 };
 
-export const api = {
-  domain: "https://public-api.wordpress.com",
-  site: "en.blog.wordpress.com",
-  url: `${this.domain}/rest/v1.1/sites/${this.site}/`
-};
+export const domain = "https://public-api.wordpress.com";
+export const site = "en.blog.wordpress.com";
+export const url = `${domain}/rest/v1.1/sites/${site}/`;
