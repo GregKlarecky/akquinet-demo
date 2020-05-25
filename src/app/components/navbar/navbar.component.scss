@@ -1,0 +1,17 @@
+@import "~src/assets/variables";
+.wrapper {
+  height: $navbar-height;
+  position: fixed;
+  z-index: $navbar-z;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: $font-large;
+}
+
+.space-holder {
+  height: $navbar-height;
+}
