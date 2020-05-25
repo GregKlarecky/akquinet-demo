@@ -1,1 +1,19 @@
-<p>post works!</p>
+<div class="post">
+  <div class="row bg-white h-100 mx-0 py-2">
+    <div class="col-12 px-0">
+      <div class="card card-body border-0 py-2">
+        <img [src]="post.post_thumbnail.URL" alt="" class="w-100" />
+      </div>
+    </div>
+    <div class="col-12 px-0">
+      <div class="card card-body border-0">
+        <h5>{{ post.title }}</h5>
+        <div class="content" [innerHTML]="post.excerpt"></div>
+        <div class="row text-muted footer">
+          <div class="col">{{ post.author.name }}</div>
+          <div class="col">{{ post.date }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
