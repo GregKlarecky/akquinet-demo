@@ -18,7 +18,7 @@ export class PostResolver implements Resolve<any> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<Post> {
-    return this.api.getPostBySlug(route.paramMap.get("slug")).pipe(
+    return this.api.getPostWithDetails(route.paramMap.get("slug")).pipe(
       catchError(err => {
         this.router.navigate(["/not-found"]);
         return EMPTY;

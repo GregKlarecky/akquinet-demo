@@ -10,6 +10,7 @@ import { PostComponent } from "./components/post/post.component";
 import { PostDetailsComponent } from "./pages/post-details/post-details.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ErrorComponent } from './pages/error/error.component';
+import { CommentComponent } from './components/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ErrorComponent } from './pages/error/error.component';
     SideDrawerComponent,
     PostComponent,
     PostDetailsComponent,
-    ErrorComponent
+    ErrorComponent,
+    CommentComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

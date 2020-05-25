@@ -1,1 +1,17 @@
-<p>post-details works!</p>
+<div class="wrapper">
+  <img [src]="post.post_thumbnail.URL" alt="" class="w-100 mb-3" />
+  <div class="container-fluid">
+    <div class="hero-box mb-5">
+      <h1>{{ post.title }}</h1>
+      <div class="content" [innerHTML]="post.excerpt"></div>
+      <div class="row text-muted footer">
+        <div class="col">{{ post.author.name }}</div>
+        <div class="col">{{ post.date }}</div>
+      </div>
+    </div>
+    <div class="content" [innerHTML]="post.content"></div>
+    <div class="comments">
+      <app-comment *ngFor="let comment of post.comments"></app-comment>
+    </div>
+  </div>
+</div>

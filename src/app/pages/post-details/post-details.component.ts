@@ -1,4 +1,7 @@
 import { Component, OnInit } from "@angular/core";
+import { Post } from "src/app/interfaces/post.interface";
+import { ActivatedRouteSnapshot, ActivatedRoute } from "@angular/router";
+import { PostExtended } from "src/app/interfaces/post-extended.interface";
 
 @Component({
   selector: "app-post-details",
@@ -6,7 +9,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./post-details.component.scss"]
 })
 export class PostDetailsComponent implements OnInit {
-  constructor() {}
+  public post: PostExtended;
+  constructor(private route: ActivatedRoute) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.post = this.route.snapshot.data.post;
+  }
 }

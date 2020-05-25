@@ -9,5 +9,6 @@ export interface Author {
   URL: string;
   avatar_URL: string;
   profile_URL: string;
-  site_ID: number;
+  site_ID?: number;
+  ip_address?: boolean;
 }
