@@ -14,7 +14,7 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     this.imageStyle = {
-      background: `url(${this.post.post_thumbnail.URL}) center/cover no-repeat`
+      background: `#ccc url(${this.post.post_thumbnail.URL}) center/cover no-repeat`
     };
   }
 }

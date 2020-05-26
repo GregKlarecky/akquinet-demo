@@ -13,6 +13,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { AuthorComponent } from './components/author/author.component';
 import { SafeHTMLPipe } from './pipes/safe-html.pipe';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SafeHTMLPipe } from './pipes/safe-html.pipe';
     ErrorComponent,
     CommentComponent,
     AuthorComponent,
-    SafeHTMLPipe
+    SafeHTMLPipe,
+    SpinnerComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

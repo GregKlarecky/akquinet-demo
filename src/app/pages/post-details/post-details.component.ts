@@ -16,7 +16,7 @@ export class PostDetailsComponent implements OnInit {
   ngOnInit() {
     this.post = this.route.snapshot.data.post;
     this.imageStyle = {
-      background: `url(${this.post.post_thumbnail.URL}) center/cover no-repeat`
+      background: `#ccc url(${this.post.post_thumbnail.URL}) center/cover no-repeat`
     };
   }
 }
