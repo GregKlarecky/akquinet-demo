@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <img [src]="post.post_thumbnail.URL" alt="" class="w-100 mb-3" />
+  <div [ngStyle]="imageStyle" class="mb-3 w-100 post-img"></div>
   <div class="container-fluid">
     <div class="hero-box mb-5">
       <h1>{{ post.title }}</h1>
