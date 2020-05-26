@@ -1,5 +1,5 @@
-<div [class.blur]="spinner">
+<div class="wrapper" [class.blur]="spinner">
   <app-navbar></app-navbar>
   <router-outlet></router-outlet>
 </div>
-<app-backdrop *ngIf="spinner"></app-backdrop>
+<app-backdrop *ngIf="spinner" @fade></app-backdrop>

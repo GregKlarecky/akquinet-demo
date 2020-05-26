@@ -9,12 +9,13 @@ import { SideDrawerComponent } from "./components/side-drawer/side-drawer.compon
 import { PostComponent } from "./components/post/post.component";
 import { PostDetailsComponent } from "./pages/post-details/post-details.component";
 import { HttpClientModule } from "@angular/common/http";
-import { ErrorComponent } from './pages/error/error.component';
-import { CommentComponent } from './components/comment/comment.component';
-import { AuthorComponent } from './components/author/author.component';
-import { SafeHTMLPipe } from './pipes/safe-html.pipe';
-import { SpinnerComponent } from './components/spinner/spinner.component';
-import { BackdropComponent } from './components/backdrop/backdrop.component';
+import { ErrorComponent } from "./pages/error/error.component";
+import { CommentComponent } from "./components/comment/comment.component";
+import { AuthorComponent } from "./components/author/author.component";
+import { SafeHTMLPipe } from "./pipes/safe-html.pipe";
+import { SpinnerComponent } from "./components/spinner/spinner.component";
+import { BackdropComponent } from "./components/backdrop/backdrop.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,12 @@ import { BackdropComponent } from './components/backdrop/backdrop.component';
     SpinnerComponent,
     BackdropComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
