@@ -1,7 +1,16 @@
+@import "~src/assets/mixins";
+
 .content {
   ::ng-deep img {
-    width: 100%;
+    @include post-width;
+    display: block;
+    margin: 0 auto;
   }
+}
+
+.container-post {
+  @include post-width;
+  margin: 0 auto;
 }
 
 .post-img {

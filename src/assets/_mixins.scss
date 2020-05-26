@@ -1,0 +1,18 @@
+@import "~src/assets/variables";
+
+@mixin max-width($sm, $md, $l, $xl) {
+  width: $sm;
+  max-width: $screen-sm-min;
+  @media screen and (min-width: $screen-md-min) {
+    max-width: $md;
+  }
+  @media screen and (min-width: $screen-l-min) {
+    max-width: $l;
+  }
+  @media screen and (min-width: $screen-xl-min) {
+    max-width: $xl;
+  }
+}
+@mixin post-width {
+  @include max-width(auto, 740px, 740px, 740px);
+}

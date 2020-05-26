@@ -1,13 +1,10 @@
 <div class="wrapper">
   <div [ngStyle]="imageStyle" class="mb-3 w-100 post-img"></div>
-  <div class="container-fluid">
+  <div class="container-post">
     <div class="hero-box mb-5">
       <h1>{{ post.title }}</h1>
       <div class="content" [innerHTML]="post.excerpt | safeHTML"></div>
-      <div class="row text-muted footer">
-        <div class="col">{{ post.author.name }}</div>
-        <div class="col">{{ post.date | date: "medium" }}</div>
-      </div>
+      <app-author [author]="post.author" [date]="post.date"></app-author>
     </div>
     <div class="content" [innerHTML]="post.content | safeHTML"></div>
     <div class="comments">
