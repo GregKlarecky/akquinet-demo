@@ -3,13 +3,13 @@
   <div class="container-fluid">
     <div class="hero-box mb-5">
       <h1>{{ post.title }}</h1>
-      <div class="content" [innerHTML]="post.excerpt"></div>
+      <div class="content" [innerHTML]="post.excerpt | safeHTML"></div>
       <div class="row text-muted footer">
         <div class="col">{{ post.author.name }}</div>
         <div class="col">{{ post.date | date: "medium" }}</div>
       </div>
     </div>
-    <div class="content" [innerHTML]="post.content"></div>
+    <div class="content" [innerHTML]="post.content | safeHTML"></div>
     <div class="comments">
       <h3 class="mt-5 mb-4">Comments</h3>
       <app-comment

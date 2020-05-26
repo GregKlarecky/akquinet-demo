@@ -12,6 +12,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { ErrorComponent } from './pages/error/error.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { AuthorComponent } from './components/author/author.component';
+import { SafeHTMLPipe } from './pipes/safe-html.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AuthorComponent } from './components/author/author.component';
     PostDetailsComponent,
     ErrorComponent,
     CommentComponent,
-    AuthorComponent
+    AuthorComponent,
+    SafeHTMLPipe
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

@@ -2,5 +2,5 @@
   <div class="col-12 mb-3">
     <app-author [author]="comment.author" [date]="comment.date"></app-author>
   </div>
-  <div class="col-12" [innerHTML]="comment.content"></div>
+  <div class="col-12" [innerHTML]="comment.content | safeHTML"></div>
 </div>
