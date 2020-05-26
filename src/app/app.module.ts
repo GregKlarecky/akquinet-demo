@@ -14,6 +14,7 @@ import { CommentComponent } from './components/comment/comment.component';
 import { AuthorComponent } from './components/author/author.component';
 import { SafeHTMLPipe } from './pipes/safe-html.pipe';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { BackdropComponent } from './components/backdrop/backdrop.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     CommentComponent,
     AuthorComponent,
     SafeHTMLPipe,
-    SpinnerComponent
+    SpinnerComponent,
+    BackdropComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
