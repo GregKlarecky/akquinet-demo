@@ -8,7 +8,12 @@ import { Post } from "src/app/interfaces/post.interface";
 })
 export class PostComponent implements OnInit {
   @Input() post: Post;
+  public imageStyle: any;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.imageStyle = {
+      background: `url(${this.post.post_thumbnail.URL}) center/cover no-repeat`
+    };
+  }
 }
