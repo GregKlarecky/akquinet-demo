@@ -11,6 +11,7 @@ import { PostDetailsComponent } from "./pages/post-details/post-details.componen
 import { HttpClientModule } from "@angular/common/http";
 import { ErrorComponent } from './pages/error/error.component';
 import { CommentComponent } from './components/comment/comment.component';
+import { AuthorComponent } from './components/author/author.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CommentComponent } from './components/comment/comment.component';
     PostComponent,
     PostDetailsComponent,
     ErrorComponent,
-    CommentComponent
+    CommentComponent,
+    AuthorComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

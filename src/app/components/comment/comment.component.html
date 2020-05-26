@@ -1,12 +1,6 @@
 <div class="row mb-4">
-  <div class="col-12">
-    <div
-      class="d-flex justify-content-start mb-3 text-muted header align-items-center"
-    >
-      <img [src]="comment.author.avatar_URL" class="avatar" />
-      <span class="pl-3">{{ comment.author.name }}</span>
-      <span class="pl-3">{{ comment.date }}</span>
-    </div>
+  <div class="col-12 mb-3">
+    <app-author [author]="comment.author" [date]="comment.date"></app-author>
   </div>
   <div class="col-12" [innerHTML]="comment.content"></div>
 </div>

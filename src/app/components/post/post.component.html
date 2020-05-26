@@ -9,10 +9,7 @@
       <div class="card card-body border-0">
         <h5>{{ post.title }}</h5>
         <div class="content" [innerHTML]="post.excerpt"></div>
-        <div class="row text-muted footer">
-          <div class="col">{{ post.author.name }}</div>
-          <div class="col">{{ post.date }}</div>
-        </div>
+        <app-author [author]="post.author" [date]="post.date"></app-author>
       </div>
     </div>
   </div>
