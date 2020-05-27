@@ -7,7 +7,7 @@ import { HomepageComponent } from "./pages/homepage/homepage.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { PostComponent } from "./components/post/post.component";
 import { PostDetailsComponent } from "./pages/post-details/post-details.component";
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { ErrorComponent } from "./pages/error/error.component";
 import { CommentComponent } from "./components/comment/comment.component";
 import { AuthorComponent } from "./components/author/author.component";
@@ -15,6 +15,7 @@ import { SafeHTMLPipe } from "./pipes/safe-html.pipe";
 import { SpinnerComponent } from "./components/spinner/spinner.component";
 import { BackdropComponent } from "./components/backdrop/backdrop.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ErrorInterceptor } from "./interceptors/error.interceptor";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,13 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
