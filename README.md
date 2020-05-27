@@ -37,4 +37,4 @@ Furtheremore you may find some styling folder structure inside assets folder:
 
 ## P.S.
 
-Please don't judge if you spot some small gawky css coming from CMS block. I hope you pay attention only to code structure and good practices.
+Please don't judge me if you spot some small gawky css coming from CMS block. I hope you pay attention only to code structure and good practices.
