@@ -10,14 +10,19 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 App folder structure splits into 8 groups:
 
-- animations
-- components
-- interceptors
-- interfaces
-- pages
-- resolvers
-- services
+`Animations` - Includes angular animations to keep components nit and clean.
 
-`Animations` - Includes angular animations to keep compoenents nit and clean.
+`Components` - All small reusable components. Things like post, comment, spinner, author e.t.c.
 
-`Components` - All small reusable components. Things like post, comment, spinner, author e.t.c
+`interfaces` - All the interfaces covering all potential data that might be used during development process.
+
+`pages` - So called "routing components" or "page-components". Literraly home-page, post-page and 404-page.
+
+`resolvers` - Includes 2 resolvers that requests for data before entering a page. In case 404 error comes from the server they redirect user to 404 page.
+
+`services` - Contains single service that holds api handling logic.
+
+Furtheremore you may find some styling folder structure inside assets folder:
+
+`_mixins` - Holds 2 mixins. I created them because of work habbit. I expected to you such feature i case I planned to develop this app in the future. I had a problem with images styles from CMS wordpress block and so "max-width" mixing came to the world. :)
+`_variables` - Holds common style variables
