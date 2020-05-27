@@ -20,7 +20,7 @@ App folder structure splits into 8 groups:
 
 `resolvers` - Includes 2 resolvers that requests for data before entering a page. In case 404 error comes from the server they redirect user to 404 page.
 
-`services` - Contains single service that holds api handling logic.
+`services` - Contains a single service that holds api handling logic.
 
 Furtheremore you may find some styling folder structure inside assets folder:
 
