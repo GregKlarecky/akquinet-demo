@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
+## Description
+
+Simple post application that lists posts on a homepage. Clicking a post triggers spinner animation that takes user's attention while data is beeing loaded and finally a redirection to the post's info page. If you're tricky and you put wrong url address you'll be taken to 404 page. In case you want to go back to homepage please click `demo` in the upper left corner.
+
+## Installation
+
+run `npm i`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
