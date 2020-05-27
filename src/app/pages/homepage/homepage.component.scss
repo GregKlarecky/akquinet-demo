@@ -1,1 +1,7 @@
 @import "~src/assets/variables";
+@import "~src/assets/mixins";
+
+.post-container {
+  @include post-width;
+  margin: 0 auto;
+}
