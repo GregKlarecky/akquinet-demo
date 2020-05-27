@@ -16,7 +16,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Code organization
 
-App folder structure splits into 8 groups:
+App folder structure splits into 7 groups:
 
 `Animations` - Includes angular animations to keep components nit and clean.
 
