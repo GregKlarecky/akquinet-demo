@@ -9,10 +9,15 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code organization
 
 App folder structure splits into 8 groups:
--animations
--components
--interceptors
--interfaces
--pages
--resolvers
--services
+
+- animations
+- components
+- interceptors
+- interfaces
+- pages
+- resolvers
+- services
+
+`Animations` - Includes angular animations to keep compoenents nit and clean.
+
+`Components` - All small reusable components. Things like post, comment, spinner, author e.t.c
