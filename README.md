@@ -34,3 +34,7 @@ Furtheremore you may find some styling folder structure inside assets folder:
 
 `_mixins` - Holds 2 mixins. I created them because of work habbit. I expected some style patterns to be reused in case I planned to develop this app further. I had a problem with images styles from CMS wordpress block and so "max-width" mixing came to the world. :)
 `_variables` - Holds common style variables
+
+## P.S.
+
+Please don't judge if you spot some small gawky css coming from CMS block. I hope you pay attention only to code structure and good practices.
